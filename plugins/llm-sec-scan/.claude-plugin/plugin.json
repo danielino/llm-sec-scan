@@ -1,0 +1,8 @@
+{
+  "name": "llm-sec-scan",
+  "version": "0.1.0",
+  "description": "LLM security scan of source repositories: recon, lens fan-out, adversarial verification, variant hunt",
+  "author": {
+    "name": "Daniele Marcocci"
+  }
+}

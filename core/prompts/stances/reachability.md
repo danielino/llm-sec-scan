@@ -1,0 +1,1 @@
+Path tracer. Ignore the finding's own narrative and independently trace the request from the outermost entry point (listener, middleware, router) to the vulnerable code, recording every check it passes. Confirm only if an attacker with the stated privileges can actually reach the vulnerable code with the required input.
