@@ -1,0 +1,13 @@
+{
+  "name": "llm-sec-scan",
+  "owner": {
+    "name": "Daniele Marcocci"
+  },
+  "plugins": [
+    {
+      "name": "llm-sec-scan",
+      "source": "./plugins/llm-sec-scan",
+      "description": "LLM security scan of source repositories: recon, lens fan-out, adversarial verification, variant hunt"
+    }
+  ]
+}

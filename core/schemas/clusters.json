@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "clusters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "members": { "type": "array", "items": { "type": "integer" }, "description": "indices of the findings in this cluster" },
+          "root_cause": { "type": "string" }
+        },
+        "required": ["members", "root_cause"]
+      }
+    }
+  },
+  "required": ["clusters"]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "properties": {
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "bug_class": { "type": "string" },
+          "severity": { "type": "string", "enum": ["critical", "high", "medium", "low"] },
+          "file": { "type": "string", "description": "path relative to the repository root" },
+          "line": { "type": "number" },
+          "other_locations": { "type": "array", "items": { "type": "string" }, "description": "file:line" },
+          "attacker": { "type": "string", "description": "actor and minimum privileges or configuration required" },
+          "root_cause": { "type": "string" },
+          "exploit": { "type": "string", "description": "concrete requests or steps" },
+          "impact": { "type": "string" },
+          "confidence": { "type": "number", "description": "from 0 to 1" }
+        },
+        "required": ["title", "bug_class", "severity", "file", "line", "attacker", "root_cause", "exploit", "impact", "confidence"]
+      }
+    }
+  },
+  "required": ["findings"]
+}
