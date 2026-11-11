@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "properties": {
+    "summary": { "type": "string" },
+    "actors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "privileges": { "type": "string" }
+        },
+        "required": ["name", "privileges"]
+      }
+    },
+    "assets": { "type": "array", "items": { "type": "string" } },
+    "surfaces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string", "description": "short kebab-case identifier" },
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "entry_files": { "type": "array", "items": { "type": "string" } },
+          "layer_chain": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "ordered layers a request crosses, outermost first, with file:line"
+          },
+          "decision_points": { "type": "array", "items": { "type": "string" } },
+          "risk": { "type": "number", "description": "security relevance from 1 to 10" }
+        },
+        "required": ["id", "name", "description", "entry_files", "layer_chain", "decision_points", "risk"]
+      }
+    },
+    "parser_pairs": {
+      "type": "array",
+      "description": "pairs of components that independently interpret the same input",
+      "items": {
+        "type": "object",
+        "properties": {
+          "input": { "type": "string" },
+          "component_a": { "type": "string" },
+          "component_b": { "type": "string" }
+        },
+        "required": ["input", "component_a", "component_b"]
+      }
+    }
+  },
+  "required": ["summary", "actors", "assets", "surfaces", "parser_pairs"]
+}

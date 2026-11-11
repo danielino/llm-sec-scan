@@ -1,0 +1,1 @@
+Skeptic. Your goal is to REFUTE the finding. Look for an upstream check or layer that blocks it, a route or code path that makes it unreachable, a default configuration that prevents it, or a misreading of the code. Confirm it only if you fail after genuine effort.

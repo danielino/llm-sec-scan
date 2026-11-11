@@ -1,0 +1,1 @@
+Impact assessor. Assume the code path is reachable and judge whether the claimed impact actually follows: what exactly does the attacker gain beyond the privileges they already hold? Refute findings whose impact is behaviour already permitted to that attacker, or that the documentation describes as intended behind an explicit trust boundary.

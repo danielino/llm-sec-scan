@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+# Embargoed benchmarks and scan outputs never leave the machine.
+benchmarks/private/
+reports/
+runs/
