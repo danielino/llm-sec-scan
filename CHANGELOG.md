@@ -12,3 +12,4 @@ All notable changes to this project are documented in this file. The format foll
 - `security-scan` skill and Markdown report renderer, packaged as the `llm-sec-scan` plugin; the repository is its own plugin marketplace.
 - Benchmark format and validator; `benchmarks/private/` for embargoed benchmarks.
 - Test suite: core validation, reproducible build, workflow smoke tests with mocked agents, report rendering, benchmark validation.
+- GitHub Actions CI: generated-workflow freshness check, benchmark validation and the test suite on Python 3.10 and 3.13 with Node 22.

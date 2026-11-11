@@ -38,7 +38,7 @@ python3 scripts/benchmark.py       # validate benchmark files
 python3 -m unittest discover -s tests -v
 ```
 
-Run the full suite after every change; every change ships with tests, and all tests pass before committing.
+Run the full suite after every change; every change ships with tests, and all tests pass before committing. CI (`.github/workflows/ci.yml`) runs the same checks on Python 3.10 and 3.13 with Node 22 for every push to `main`/`develop` and every pull request.
 
 ## Adding or changing a lens
 
